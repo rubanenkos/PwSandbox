@@ -1,6 +1,6 @@
 export class SessionCache {
     private static instance: SessionCache;
-    private session: any; // Replace `any` with the type of your session object
+    private session: any; 
   
     private constructor() {
       this.session = null;
@@ -9,8 +9,6 @@ export class SessionCache {
     public static getInstance(): SessionCache {
       if (!SessionCache.instance) {
         SessionCache.instance = new SessionCache();
-        console.log('New session');
-        
       }
       return SessionCache.instance;
     }
